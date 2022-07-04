@@ -1,0 +1,27 @@
+.logo {
+    font-family: "Raleway", sans-serif;
+    @include font(700, 24px, 1.167, 0.03em);
+    @media screen and (min-width:1200px) {
+        @include font(700, 26px, 1.19, 0.03em);
+    }
+    
+    color: #000000;
+    @media screen  and (min-width:1200px){
+        margin-right: 93px;
+    }
+    
+}
+
+.logo__web {
+    color: var(--accent-colour)
+}
+
+
+.logo--inverse {
+
+    color: var(--second-title-color);
+}
+
+.footer--logo {
+    text-align: center;
+}
