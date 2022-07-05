@@ -8,11 +8,11 @@
     background-position: center;
     background-size: cover;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)), url(/image/hero\ mob-min.jpg);
+    rgba(47, 48, 58, 0.4)), url(../image/hero-mob-min.jpg);
     width: 100%;
     @include retina {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)), url(/image/hero\ mob@2x-min.jpg);
+                    rgba(47, 48, 58, 0.4)), url(../image/hero-mob@2x-min.jpg);
             
     }
     
@@ -24,7 +24,7 @@
                 
         @include retina {
                 background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                        rgba(47, 48, 58, 0.4)), url(/image/Header\ imghero\ tabl@2x-min.jpg);
+                        rgba(47, 48, 58, 0.4)), url(../image/Header-imghero-tabl@2x-min.jpg);
                 
             }}
 
@@ -32,10 +32,10 @@
             width: 1200px;
             
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)), url(/image/Img-hero\ \(1\).jpg);
+                    rgba(47, 48, 58, 0.4)), url(../image/Img-hero1.jpg);
             @include retina {
                     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                            rgba(47, 48, 58, 0.4)), url(/image/hero\ desk2x-min.jpg);
+                            rgba(47, 48, 58, 0.4)), url(../image/hero-desk2x-min.jpg);
                     
                 }
             padding-top: 200px;
