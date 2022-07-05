@@ -197,7 +197,9 @@
 
 
 .checkbox__text {
-    
+    @media screen and (max-width:479px) {
+            text-align:right;
+        }
     
     @include font(null, 12px, 1.167, 0.03em);
         
