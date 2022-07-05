@@ -262,6 +262,10 @@ img {
 /* .no-scroll {
             overflow: hidden;
         } */
+.no-scroll {
+  overflow: hidden;
+}
+
 .close-btn {
   position: absolute;
   display: -webkit-box;
@@ -651,6 +655,7 @@ img {
 @media screen and (min-width: 1200px) {
   .contacts__item:not(:first-child) {
     margin-left: 30px;
+    margin-top: 0;
   }
 }
 
@@ -699,6 +704,7 @@ img {
 .menu-close-btn {
   border: none;
   background-color: transparent;
+  display: block;
   margin-left: auto;
   cursor: pointer;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -737,11 +743,17 @@ img {
       -ms-flex-align: start;
           align-items: flex-start;
   height: 100%;
-  width: 100%;
   overflow-y: auto;
-  -webkit-box-pack: normal;
-      -ms-flex-pack: normal;
-          justify-content: normal;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.mob-menu .mob-menu__top {
+  width: 100%;
+}
+.mob-menu .mob-menu.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 .mob-menu .mob-menu__item:not(:first-child) {
   margin-top: 30px;
@@ -752,6 +764,9 @@ img {
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: #212121;
+}
+.mob-menu .mob-menu__link:hover, .mob-menu .mob-menu__link:focus {
+  color: var(--accent-colour);
 }
 .mob-menu .mob-contacts__item:not(:first-child) {
   margin-top: 30px;
@@ -777,11 +792,15 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: auto;
+  margin-top: 64px;
 }
 
+.mob-soc__item {
+  padding-right: 10px;
+}
 .mob-soc__item:not(:last-child) {
-  margin-right: 20px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
 }
 
 .mob-soc__link {
@@ -790,21 +809,6 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
-}
-
-.link.line::after {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  width: 22px;
-  height: 0px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.mob-contacts {
-  margin-top: auto;
 }
 
 .is-hidden {
